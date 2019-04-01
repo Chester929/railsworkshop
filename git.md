@@ -38,3 +38,10 @@ Another configurations: https://git-scm.com/book/en/v2/Customizing-Git-Git-Confi
     git commit -m 'Some message'        # commit added files with message
     git push                            # push changes to actual branch
 
+### Checkout and Merging examples
+
+    git checkout -b railsworkshop
+    git pull
+    git checkout master
+    git merge railsworkshop
+    git push
