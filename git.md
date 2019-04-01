@@ -45,3 +45,5 @@ Another configurations: https://git-scm.com/book/en/v2/Customizing-Git-Git-Confi
     git checkout master
     git merge railsworkshop
     git push
+
+### New merged line :)
