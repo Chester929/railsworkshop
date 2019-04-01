@@ -46,4 +46,8 @@ Another configurations: https://git-scm.com/book/en/v2/Customizing-Git-Git-Confi
     git merge railsworkshop
     git push
 
-### New merged line :)
+## New merged lines :)
+
+### Cherry pick
+
+    git cherry-pick <commit reference number>   # take commit defined by reference number and insert it to actual branch
