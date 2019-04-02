@@ -50,37 +50,26 @@ a systemwide install.
 
 3. Set up rbenv in your shell.
 
-   ~~~ sh
-   ~/.rbenv/bin/rbenv init
+   ~~~ bash
+   echo 'eval "$(rbenv init -)"' >> ~/.bashrc
    ~~~
-   
-   Follow the printed instructions to [set up rbenv shell integration](#how-rbenv-hooks-into-your-shell).
 
-4. Restart your shell so that PATH changes take effect. (Opening a new
-   terminal tab will usually do it.)
-
-5. Verify that rbenv is properly set up using this
-   [rbenv-doctor](https://github.com/rbenv/rbenv-installer/blob/master/bin/rbenv-doctor) script:
-
-    ~~~ sh
-    $ curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
-    Checking for `rbenv' in PATH: /usr/local/bin/rbenv
-    Checking for rbenv shims in PATH: OK
-    Checking `rbenv install' support: /usr/local/bin/rbenv-install (ruby-build 20170523)
-    Counting installed Ruby versions: none
-      There aren't any Ruby versions installed under `~/.rbenv/versions'.
-      You can install Ruby versions like so: rbenv install 2.2.4
-    Checking RubyGems settings: OK
-    Auditing installed plugins: OK
-    ~~~
-
-6. _(Optional)_ Install [ruby-build][], which provides the
+4. Install [ruby-build][], which provides the
    `rbenv install` command that simplifies the process of
-   [installing new Ruby versions](#installing-ruby-versions).
+   installing new Ruby versions.
+   
+   ~~~ bash
+   git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+   ~~~
+
+5. Restart your shell so that PATH changes take effect. (Opening a new
+   terminal tab will usually do it.)
+   
  
  ### To install from another sources, see
  
- https://github.com/rbenv/rbenv/blob/master/README.md#installation
+ * https://github.com/rbenv/rbenv/blob/master/README.md#installation
+ * https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-18-04
  
  ## How to use
  
